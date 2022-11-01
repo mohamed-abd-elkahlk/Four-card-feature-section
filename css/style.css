@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+}
+header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+header h1{
+    font-weight: 400;
+    color: #504e5b;
+    line-height: 1.5;
+}
+header h1 span{
+    font-weight: 900;
+}
+header p{
+    color: #adaeb2;
+    line-height: 1.7;
+}
+main{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+main .card{
+    width: 350px;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #dfe6ee;
+    margin: 20px;
+    position: relative;
+    border-radius: 8px;
+
+}
+main .card h2{
+    color: #474b57;
+    margin-bottom: 20px;
+}
+main .card p{
+    line-height: 1.7;
+    color: #b9b9bb;
+}
+main .card img{
+    margin-top: 20px;
+    margin-bottom :20px;
+    margin-left: 200px;
+}
+main .left .card{
+    border-top: 5px solid #46d2d1;
+}
+main .right .card{
+    border-top: 5px solid #549cee;
+}
+main .mid .card{
+    border-top: 5px solid #ec5355;
+}
+main .mid .card:nth-child(2){
+    border-top: 5px solid #fbad4b;
+}
+@media (max-width:768px) {
+    main{
+        flex-direction: column;
+    }
+}  
